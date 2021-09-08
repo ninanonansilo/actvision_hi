@@ -1,29 +1,234 @@
-﻿{
-	"id": "",
-	"pw": "",
-	"setup_place": "경상북도 경산시 대학로 280 영남대학교 기계IT대학 정보통신공학과 303호",
-	"setup_day": {
-		"year": "2021",
-		"month": "6",
-		"day": "17",
-		"hour": "15",
-		"minute": "00",
-		"second": "03"
+﻿[
+	{
+		"time": {
+			"year": "2021",
+			"month": "09",
+			"day": "08",
+			"hour": "13",
+			"minute": "23",
+			"second": "10",
+			"alltime": "20210908132300"
+		},
+		"type": "video",
+		"action": "play",
+		"title": [
+			"zzzc.mp4"
+		]
 	},
-	"display": {
-		"width": "80",
-		"height": "64"
+	{
+		"time": {
+			"year": "2021",
+			"month": "09",
+			"day": "08",
+			"hour": "13",
+			"minute": "25",
+			"second": "00",
+			"alltime": "20210908132500"
+		},
+		"type": "video",
+		"action": "stop"
 	},
-	"max_brightness": "63",
-	"serial": "10000000ce62b965",
-	"company_name": "영남대학교 이동통신연구실",
-	"Pattern": "3",
-	"Time": {
-		"year": "2021",
-		"month": "09",
-		"day": "07",
-		"hour": "17",
-		"minute": "03",
-		"second": "41"
+	{
+		"time": {
+			"year": "2021",
+			"month": "09",
+			"day": "09",
+			"hour": "13",
+			"minute": "23",
+			"second": "10",
+			"alltime": "20210909132300"
+		},
+		"type": "video",
+		"action": "play",
+		"title": [
+			"zzzc.mp4"
+		]
+	},
+	{
+		"time": {
+			"year": "2021",
+			"month": "09",
+			"day": "09",
+			"hour": "13",
+			"minute": "25",
+			"second": "00",
+			"alltime": "20210909132500"
+		},
+		"type": "video",
+		"action": "stop"
+	},
+	{
+		"time": {
+			"year": "2021",
+			"month": "09",
+			"day": "15",
+			"hour": "13",
+			"minute": "23",
+			"second": "10",
+			"alltime": "20210915132300"
+		},
+		"type": "video",
+		"action": "play",
+		"title": [
+			"zzzc.mp4"
+		]
+	},
+	{
+		"time": {
+			"year": "2021",
+			"month": "09",
+			"day": "15",
+			"hour": "13",
+			"minute": "25",
+			"second": "00",
+			"alltime": "20210915132500"
+		},
+		"type": "video",
+		"action": "stop"
+	},
+	{
+		"time": {
+			"year": "2021",
+			"month": "09",
+			"day": "16",
+			"hour": "13",
+			"minute": "23",
+			"second": "10",
+			"alltime": "20210916132300"
+		},
+		"type": "video",
+		"action": "play",
+		"title": [
+			"zzzc.mp4"
+		]
+	},
+	{
+		"time": {
+			"year": "2021",
+			"month": "09",
+			"day": "16",
+			"hour": "13",
+			"minute": "25",
+			"second": "00",
+			"alltime": "20210916132500"
+		},
+		"type": "video",
+		"action": "stop"
+	},
+	{
+		"time": {
+			"year": "2021",
+			"month": "09",
+			"day": "22",
+			"hour": "13",
+			"minute": "23",
+			"second": "10",
+			"alltime": "20210922132300"
+		},
+		"type": "video",
+		"action": "play",
+		"title": [
+			"zzzc.mp4"
+		]
+	},
+	{
+		"time": {
+			"year": "2021",
+			"month": "09",
+			"day": "22",
+			"hour": "13",
+			"minute": "25",
+			"second": "00",
+			"alltime": "20210922132500"
+		},
+		"type": "video",
+		"action": "stop"
+	},
+	{
+		"time": {
+			"year": "2021",
+			"month": "09",
+			"day": "23",
+			"hour": "13",
+			"minute": "23",
+			"second": "10",
+			"alltime": "20210923132300"
+		},
+		"type": "video",
+		"action": "play",
+		"title": [
+			"zzzc.mp4"
+		]
+	},
+	{
+		"time": {
+			"year": "2021",
+			"month": "09",
+			"day": "23",
+			"hour": "13",
+			"minute": "25",
+			"second": "00",
+			"alltime": "20210923132500"
+		},
+		"type": "video",
+		"action": "stop"
+	},
+	{
+		"time": {
+			"year": "2021",
+			"month": "09",
+			"day": "29",
+			"hour": "13",
+			"minute": "23",
+			"second": "10",
+			"alltime": "20210929132300"
+		},
+		"type": "video",
+		"action": "play",
+		"title": [
+			"zzzc.mp4"
+		]
+	},
+	{
+		"time": {
+			"year": "2021",
+			"month": "09",
+			"day": "29",
+			"hour": "13",
+			"minute": "25",
+			"second": "00",
+			"alltime": "20210929132500"
+		},
+		"type": "video",
+		"action": "stop"
+	},
+	{
+		"time": {
+			"year": "2021",
+			"month": "09",
+			"day": "30",
+			"hour": "13",
+			"minute": "23",
+			"second": "10",
+			"alltime": "20210930132300"
+		},
+		"type": "video",
+		"action": "play",
+		"title": [
+			"zzzc.mp4"
+		]
+	},
+	{
+		"time": {
+			"year": "2021",
+			"month": "09",
+			"day": "30",
+			"hour": "13",
+			"minute": "25",
+			"second": "00",
+			"alltime": "20210930132500"
+		},
+		"type": "video",
+		"action": "stop"
 	}
-}
+]

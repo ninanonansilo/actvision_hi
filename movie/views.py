@@ -189,7 +189,13 @@ def delete_video(request):  # 선택된 재생목록 삭제
         return redirect('movie.html')
 
 
-
+sun = -1
+mon = -1
+tues = -1
+wed = -1
+thurs = -1
+fri = -1
+sat = -1
 @csrf_exempt
 def play_schedule(request):
     if request.method == 'POST':
@@ -205,6 +211,20 @@ def play_schedule(request):
             finish_min = request.POST["finish_min"]
             video_index = int(request.POST["video_index"])
             play_list_index = request.POST["play_list_index"]
+            global sun
+            global mon
+            global tues
+            global wed
+            global thurs
+            global fri
+            global sat
+            sun = request.POST["sun"]
+            mon = request.POST["mon"]
+            tues = request.POST["tues"]
+            wed = request.POST["wed"]
+            thurs = request.POST["thurs"]
+            fri = request.POST["fri"]
+            sat = request.POST["sat"]
             print(start_day , finish_day)
             # 선택한 인덱스의 파일이름을 가져와 14자리 떼어냄
             play_list = directory_list()
@@ -273,6 +293,8 @@ def play_list_trans(request): # 재생목록 전송
             schedule_list = schedule_list_in_bucket(play_list_name, -2)
 
 
+
+
             data = []
             # 해당 디렉토리의 이름들로 스케쥴 작성 , 일정 미작성 동영상(또는 과거) 모두 고려
             for i in range(len(schedule_list)): # 스케쥴 개수(재생목록 내 동영상 개수) 만큼 반복
@@ -287,7 +309,20 @@ def play_list_trans(request): # 재생목록 전송
                     print(video_name_list)
                     copy_blob("ynumcl-act", user_id + "/PLAY_LIST/" + play_list_name +"/" + video_name_list[i],
                               "ynumcl-act", user_id + "/MEDIA/video/" + video_name_list[i][14:])
-                    list_date = diff_date(schedule_list[i][14:22],schedule_list[i][22:30]) # 날짜 리스트 반환 (str)
+
+                    global sun
+                    global mon
+                    global tues
+                    global wed
+                    global thurs
+                    global fri
+                    global sat
+                    list_dayofweek = [mon, tues, wed,thurs,fri,sat,sun]
+                    if 1 not in list_dayofweek: list_dayofweek = ['1','1','1','1','1','1','1']
+
+
+                    list_date = diff_date(str(schedule_list[i][14:22]),str(schedule_list[i][22:30]), list_dayofweek) # 날짜 리스트 반환 (str)
+
                     for j in range(len(list_date)):
                         info = {}
                         info["time"] = {}
@@ -336,6 +371,5 @@ def play_list_trans(request): # 재생목록 전송
     else:
         print("POST 호출 실패!")
         return redirect('movie.html')
-
 
 
